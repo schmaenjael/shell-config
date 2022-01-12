@@ -32,6 +32,18 @@ which starship
 
 Now create the file starship.toml in ~/.config/ and copy-paste the content of my starship.toml into it.
 
+------------
+
+OPTIONAL:
+
+If you want to use ``neofetch`` as well, install it using:
+
+```sh
+sudo apt-get install neofetch
+`````
+
+------------
+
 Save it and now enter ``fish`` to start the shell.
 
 To set the fish shell to default, enter the first command, copy paste the fish directory and execute the second command with your fish location.
