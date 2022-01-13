@@ -2,7 +2,7 @@
 
 ## Installation
 
-To use these configurations you are required to have the Friendly-Interactive Shell (FISH) and Starship installed.
+To use these configurations you are required to have the Friendly-Interactive Shell (FISH) and Starship (Cross-Shell Prompt)installed.
 
 Install Fish using:
 
@@ -16,15 +16,22 @@ And install starship using
 curl -fsSL https://starship.rs/install.sh | bash
 ```
 
+If not existing, create directory ~./config/fish
+```sh
+mkdir ~./config/fish
+```
+
 Navigate to ~./config/fish and create the file config.fish using:
 
 ```sh
-touch config.fish
+cd ~./config/fish && touch config.fish
 ```
 
-and copy paste the content of my configuration into the newly created file.
+Copy paste the content of my configuration into the newly created file.
 You may have to change the Path to the Starship installation.
-Check your starship installation directory with the ``which`` command and replace the path to the starship prompt in your configuration.
+e.g. it could be "/usr/local/bin/starship" instead of "/usr/bin/starship".
+
+Check your starship installation directory with the ``which`` command and replace the path to the starship prompt in your configuration (~./config/fish/config.fish - Section "Starship prompt")
 
 ```sh
 which starship
